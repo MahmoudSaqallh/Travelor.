@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Tour Guide",
+    "slug": "tour-guide",
+    "image": "/AboutPage/service-01.jpg",
+    "description": "Certified local guides who bring every destination's history, culture, and hidden gems to life."
+  },
+  {
+    "name": "Entertainment",
+    "slug": "entertainment",
+    "image": "/AboutPage/service-02.jpg",
+    "description": "Curated shows, live music, and cultural performances to make your evenings just as memorable as your days."
+  },
+  {
+    "name": "Safe Flight",
+    "slug": "safe-flight",
+    "image": "/AboutPage/service-03.jpg",
+    "description": "Verified airline partners and 24/7 support so you can travel with total peace of mind."
+  },
+  {
+    "name": "Texi & Metro",
+    "slug": "texi-metro",
+    "image": "/AboutPage/service-04.jpg",
+    "description": "Seamless airport transfers and local transport arranged before you even land."
+  },
+  {
+    "name": "Delicious Food",
+    "slug": "delicious-food",
+    "image": "/AboutPage/service-05.jpg",
+    "description": "Handpicked restaurants and food tours that showcase the best of local cuisine."
+  },
+  {
+    "name": "Spa & Massages",
+    "slug": "spa-massages",
+    "image": "/AboutPage/service-06.jpg",
+    "description": "Relax and recharge with premium spa treatments at every stop on your journey."
+  },
+  {
+    "name": "Interesting Rest",
+    "slug": "interesting-rest",
+    "image": "/AboutPage/service-07.jpg",
+    "description": "Comfortable, well-reviewed accommodations chosen for both comfort and character."
+  },
+  {
+    "name": "Pickup & Drop",
+    "slug": "pickup-drop",
+    "image": "/AboutPage/service-08.jpg",
+    "description": "Reliable pickup and drop-off service so you never have to worry about logistics."
+  }
+]

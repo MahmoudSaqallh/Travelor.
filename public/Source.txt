@@ -1,0 +1,1198 @@
+npm install tailwindcss @tailwindcss/vite
+npm install --save-dev @iconify/react
+npm install react-router-dom
+npm i swiper
+npm install react-countup
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+@theme {
+    --color-prim: #85d200;
+    --color-secondary: #066168;
+    --color-yellow: #FFAA0D;
+    --color-yellow-light: #fef9eb;
+
+    /* font family  */
+    --font-poppins: "Poppins", sans-serif;
+    --font-afacad: "Afacad", sans-serif;
+    --font-figtree: "Figtree", sans-serif;
+    --font-kaushan: "Kaushan Script", cursive;
+}
+
+body {
+    font-family: var(--font-poppins);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-afacad);
+}
+
+p,
+a {
+    font-family: var(--font-figtree);
+}
+
+// Navbar Section
+
+Travlla is a multi-award-winning strategy and content creation agency that specializes in travel marketing. 
+Don't miss out this offers!
+Basic Plan
+Pro Plan
+Full Plan
+
+https://x.com/
+https://www.facebook.com/
+https://www.instagram.com/
+https://www.youtube.com/
+
+// Hero Section
+
+The Safety of our customers at all stages
+https://www.linkedin.com/
+
+// About Section
+
+We Recommend Beautiful Destinations Every Month
+Travlla is a multi-award-winning strategy and content creation agency that specializes in travel marketing. They have one of the world's largest and most influential online travel communities, helping brands and tourism.
+
+Trusted travel guide
+Provides reliable information to help travelers plan their trips efficiently and safely.
+
+Mission & Vision
+Aims to connect people to positive experience through travel, helping them see the world differently.
+
+// Booking Steps Section
+
+Easy Steps For Bookings
+Destinations worth exploring! Here are a few popular spots
+
+const stepsData = [
+    {
+        id: 1,
+        number: "01",
+        title: "Choose Destination",
+        description:
+            "All you have to do is, first select your preferred destination and proceed",
+        icon: StepsIcon1,
+    },
+    {
+        id: 2,
+        number: "02",
+        title: "Make Payment",
+        description:
+            "You are important to us. We pay attention to the quality of  service we provide to you.",
+        icon: StepsIcon2,
+    },
+    {
+        id: 3,
+        number: "03",
+        title: "Ready For Travelling",
+        description:
+            "We have seen that you have fulfilled all the requirements, now you are ready to travel.",
+        icon: StepsIcon3,
+    },
+];
+
+Get Special Offer
+Tours and Trip Packages , Globally
+
+
+// Top Destination Section
+
+Most Favorite Tour Places!
+Choosing a destination can be exciting but also a bit overwhelming with so many amazing places out there! Let's narrow it down a little. Are you dreaming of peaceful nature, buzzing cities, historical wonders, or relaxing beaches?
+
+// Top Destination Json 
+
+[
+    {
+        "id": 1,
+        "title": "Paris",
+        "listing": 28,
+        "image": "/src/assets/Index/TopDestination/destination1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Kashmir",
+        "listing": 32,
+        "image": "/src/assets/Index/TopDestination/destination2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Thailand",
+        "listing": 20,
+        "image": "/src/assets/Index/TopDestination/destination3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Maldives",
+        "listing": 20,
+        "image": "/src/assets/Index/TopDestination/destination4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Indonesia",
+        "listing": 80,
+        "image": "/src/assets/Index/TopDestination/destination5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Bali",
+        "listing": 20,
+        "image": "/src/assets/Index/TopDestination/destination6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Mauritius",
+        "listing": 20,
+        "image": "/src/assets/Index/TopDestination/destination7.jpg"
+    }
+]
+
+// Tour Guide Section
+
+Meet With Tour Guide
+Destinations worth exploring! Here are a few popular spots
+
+const teamMembers = [
+    { id: 1, name: "Murphy", image: team1 },
+    { id: 2, name: "Alexis Cox", image: team2 },
+    { id: 3, name: "Murray", image: team3 },
+    { id: 4, name: "Crawford", image: team4 },
+];
+
+// Tour Categories Section
+
+const categories = [
+    {
+        id: 1,
+        title: "Wildlife",
+        pera: "Observing animals in their natural habitats like tiger safaris in Ranthambore or birdwatching in Keoladeo Ghana Bird Sanctuary has become a popular and educational form of travel.",
+        image: ctg1
+    },
+    {
+        id: 2,
+        title: "Hiking",
+        pera: "Here are the people who we believe most changed the stories that defined the past year.",
+        image: ctg2
+    },
+    {
+        id: 3,
+        title: "Adventure Tours",
+        pera: "Prime Minister Anthony Albanese has plenty of reasons to ban social media for under-16s.",
+        image: ctg3
+    },
+    {
+        id: 4,
+        title: "Cultural Tours",
+        pera: "The seven-time Formula One world champion moves to the iconic brand after more than a decade with Mercedes", image: ctg4
+    },
+    {
+        id: 5,
+        title: "Cruise Tours",
+        pera: "TIME solicited nominations of places including hotels, cruises, restaurants, attractions, museums, parks, and more from around the world.",
+        image: ctg5
+    },
+    {
+        id: 5,
+        title: "Dark Tourism",
+        pera: "After inauguration day, it is on Trump and America to ensure that the oath to defend the U.S. Constitution is kept.",
+        image: ctg6
+    },
+    {
+        id: 6,
+        title: "View All",
+        isButton: true
+    }
+];
+
+Wornderful Place For You
+Tour Categories
+
+// Testimonial Section 
+
+Our CLient Says!
+Destinations worth exploring! Here are a few popular spots
+
+const testimonials = [
+    { id: 1, name: "Kavin Martin", image: tst1 },
+    { id: 2, name: "Alex Morgan", image: tst2 },
+    { id: 3, name: "John Carter", image: tst3 },
+    { id: 4, name: "Sophia Lee", image: tst4 },
+    { id: 5, name: "Daniel Smith", image: tst5 },
+    { id: 6, name: "Emma Watson", image: tst6 },
+];
+
+I Was Very Impresed Lorem posuere in miss drana en the nisan semere sceriun amiss etiam ornare in the miss drana is lorem fermen nunta mauris.
+
+// Counter Section
+
+const counters = [
+    { id: 1, title: "Awards Winning", value: 3600, suffix: "+", image: counter1 },
+    { id: 2, title: "Happy Traveler", value: 7634, suffix: "+", image: counter2 },
+    { id: 3, title: "Tours Success", value: 2.5, suffix: "K", image: counter3, decimals: 1 },
+    { id: 4, title: "Our Experience", value: 25, suffix: "+", image: counter4 },
+];
+
+// Tour Section
+
+Explore Popular Tours!
+Destinations worth exploring! Here are a few popular spots
+
+// Popular Tour Json
+
+[
+    {
+        "id": 1,
+        "title": "Bangkok Cultural Heritage Tour",
+        "review": "5 review",
+        "days": "4 days",
+        "price": "$90",
+        "Duration": "4 Days &5 Nights",
+        "Places": "1N Bangkok Old City | 2N Downtown Bangkok | 1N Riverside Bangkok",
+        "image": "/src/assets/PopularToursPage/tour-01.jpg",
+        "DaysDescription": {
+            "day1": {
+                "title": "Arrival & City Orientation",
+                "list": [
+                    "Check out of your hotel and proceed to visit the renowned Madame Tussauds wax museum.",
+                    "Travel by high-speed Eurostar train (02nd Class) from London to Paris.",
+                    "Arrive in Paris and check-in at your hotel.",
+                    "Leisure day - take the opportunity to explore McArthurGlen, just a short distance from your hotel.",
+                    "Overnight in Paris (Breakfast, Lunch, Dinner included)."
+                ]
+            },
+            "day2": {
+                "title": "Grand Palace & Temple Tour",
+                "list": [
+                    "Visit iconic landmarks: Big Ben, Houses of Parliament, Westminster Abbey, Trafalgar Square, Piccadilly Circus, Tower Bridge, River Thames, Hyde Park.",
+                    "Witness the Changing of the Guards at Buckingham Palace (subject to operation).",
+                    "Visit the legendary Lord’s Cricket Ground; ride the London Eye.",
+                    "Overnight in London (Breakfast, Lunch, Dinner included).",
+                    "Guided city tour with an expert local guide."
+                ]
+            },
+            "day3": {
+                "title": "Floating Market & Shopping",
+                "list": [
+                    "Visit iconic landmarks: Big Ben, Houses of Parliament, Westminster Abbey, Trafalgar Square, Piccadilly Circus, Tower Bridge, River Thames, Hyde Park.",
+                    "Witness the Changing of the Guards at Buckingham Palace (subject to operation).",
+                    "Visit the legendary Lord’s Cricket Ground; ride the London Eye.",
+                    "Overnight in London (Breakfast, Lunch, Dinner included).",
+                    "Guided city tour with an expert local guide."
+                ],
+                "rewareds": "Rising to 1,717 meters above sea level, it offers adventurous travelers a moderately challenging hike that rewards."
+            },
+            "day4": {
+                "title": "Departure",
+                "list": [
+                    "Guided city tour of Paris with an expert local guide.",
+                    "Discover iconic attractions: Place Vendôme, Place de l’Opéra Garnier, Musée d’Orsay, Place de la Concorde, Champs Elysées, Arc de Triomphe, Alexander Bridge, Les Invalides, and more.",
+                    "Overnight in Paris (Breakfast, Lunch, Dinner included).",
+                    "Visit the magnificent Palace of Versailles, a world-renowned UNESCO site.",
+                    "(Please note that access to the Eiffel Tower's 3rd level is contingent on its operational status. If it happens to be closed during our visit, we will explore the 2nd level instead, which offers fantastic views and insights into the Eiffel Tower's history.)"
+                ]
+            }
+        }
+    },
+    {
+        "id": 2,
+        "title": "Thailand Beaches & Island Hopping",
+        "review": "4.1 review",
+        "days": "6 days",
+        "price": "$60",
+        "Duration": " 6 Days &5 Nights",
+        "Places": "2N Phuket | 2N Krabi | 2N Phi Phi | Island Hopping | Water Sports",
+        "image": "/src/assets/PopularToursPage/tour-02.jpg",
+        "DaysDescription": {
+            "day1": {
+                "title": "Arrival in Phuket",
+                "list": [
+                    "Arrive at Phuket International Airport; meet & greet by local representative.",
+                    "Transfer to hotel & check-in.",
+                    "Relax at Patong Beach.",
+                    "Explore night markets or enjoy the vibrant nightlife."
+                ]
+            },
+            "day2": {
+                "title": "Phuket City Highlights + Big Buddha",
+                "list": [
+                    "Phuket City Tour covering Karon Viewpoint & Old Phuket Town.",
+                    "Visit the iconic Big Buddha on Nakkerd Hill.",
+                    "Explore Wat Chalong Temple.",
+                    "Evening leisure near beachside cafés."
+                ]
+            },
+            "day3": {
+                "title": "Phi Phi Island Tour",
+                "list": [
+                    "Speedboat ride to Phi Phi Don & Phi Phi Leh.",
+                    "Snorkeling in crystal clear waters.",
+                    "Visit Viking Cave & Pileh Lagoon.",
+                    "Lunch included on the island."
+                ]
+            },
+            "day4": {
+                "title": "Transfer to Krabi + Ao Nang Beach",
+                "list": [
+                    "Scenic transfer from Phuket to Krabi.",
+                    "Check-in at hotel near Ao Nang Beach.",
+                    "Sunset walk along the beachfront.",
+                    "Optional: Thai massage or café hopping."
+                ]
+            },
+            "day5": {
+                "title": "Krabi 4-Island Hopping",
+                "list": [
+                    "Explore Chicken Island, Poda Island, Tup Island & Phra Nang Cave Beach.",
+                    "Snorkeling & swimming in turquoise waters.",
+                    "Enjoy white-sand beaches with limestone cliffs.",
+                    "Return to Krabi hotel."
+                ]
+            },
+            "day6": {
+                "title": "Departure",
+                "list": [
+                    "Breakfast at hotel.",
+                    "Airport transfer for your return flight.",
+                    "End of your Thailand Beaches & Island Hopping tour."
+                ]
+            }
+        }
+    },
+    {
+        "id": 3,
+        "title": "California Dreams Road Trip",
+        "review": "4 review",
+        "days": "7 days",
+        "price": "$52",
+        "Duration": "7 Days &6 Nights",
+        "Places": "2N SF | 3N LA | 1N San Diego | Highways | Beaches | City Highlights",
+        "image": "/src/assets/PopularToursPage/tour-03.jpg",
+        "DaysDescription": {
+            "day1": {
+                "title": "Arrival in Los Angeles",
+                "list": [
+                    "Arrive at Los Angeles International Airport (LAX).",
+                    "Pick up your rental car and check-in at the hotel.",
+                    "Visit Santa Monica Pier & enjoy the beach sunset.",
+                    "Explore the Los Angeles nightlife or relax at the hotel."
+                ]
+            },
+            "day2": {
+                "title": "Los Angeles City Highlights",
+                "list": [
+                    "Explore Hollywood Walk of Fame.",
+                    "Visit Dolby Theatre & TCL Chinese Theatre.",
+                    "Drive up to Griffith Observatory for city & Hollywood Sign views.",
+                    "Optional: Visit Universal Studios Hollywood."
+                ]
+            },
+            "day3": {
+                "title": "Los Angeles to San Diego",
+                "list": [
+                    "Drive along Pacific Coast Highway towards San Diego.",
+                    "Visit La Jolla Cove for beautiful ocean cliffs.",
+                    "Explore Old Town San Diego or Gaslamp Quarter.",
+                    "Overnight stay in San Diego."
+                ]
+            },
+            "day4": {
+                "title": "San Diego to Palm Springs",
+                "list": [
+                    "Morning visit to Balboa Park or San Diego Zoo.",
+                    "Drive to Palm Springs through scenic desert landscapes.",
+                    "Check-in & relax at your Palm Springs resort.",
+                    "Evening stroll at Palm Springs Downtown Village."
+                ]
+            },
+            "day5": {
+                "title": "Palm Springs to Yosemite National Park",
+                "list": [
+                    "Drive towards Yosemite via Fresno or Bakersfield route.",
+                    "Enter Yosemite National Park and explore its scenic viewpoints.",
+                    "See Tunnel View, El Capitan & Bridalveil Fall.",
+                    "Overnight stay near Yosemite."
+                ]
+            },
+            "day6": {
+                "title": "Yosemite to San Francisco",
+                "list": [
+                    "Morning nature walk or short hike in Yosemite Valley.",
+                    "Drive to San Francisco through Central California.",
+                    "Visit Pier 39 & Fisherman's Wharf.",
+                    "Evening view of the Golden Gate Bridge."
+                ]
+            },
+            "day7": {
+                "title": "San Francisco Departure",
+                "list": [
+                    "Explore Lombard Street (world’s most crooked street).",
+                    "Visit Union Square for last-minute shopping.",
+                    "Drop off rental car at the airport.",
+                    "Depart from San Francisco Airport with unforgettable memories."
+                ]
+            }
+        }
+    },
+    {
+        "id": 4,
+        "title": "Disneyland & Universal Family Adventure",
+        "review": "3 review",
+        "days": "5 days",
+        "price": "$59",
+        "Duration": "5 Days &4 Nights",
+        "Places": "2 Parks | Universal Studios | Disneyland | Family Fun",
+        "image": "/src/assets/PopularToursPage/tour-04.jpg",
+        "DaysDescription": {
+            "day1": {
+                "title": "Arrival in Los Angeles",
+                "list": [
+                    "Arrive at Los Angeles International Airport (LAX).",
+                    "Meet & greet and transfer to your hotel.",
+                    "Evening visit to Santa Monica Pier or stroll at Venice Beach.",
+                    "Overnight stay in Los Angeles."
+                ]
+            },
+            "day2": {
+                "title": "Disneyland – Full Day",
+                "list": [
+                    "Full-day excitement at Disneyland Park in Anaheim.",
+                    "Enjoy classic attractions: Pirates of the Caribbean, Haunted Mansion, Space Mountain.",
+                    "Meet Disney characters and enjoy live shows.",
+                    "Evening parade & spectacular fireworks show."
+                ]
+            },
+            "day3": {
+                "title": "Disney California Adventure Park",
+                "list": [
+                    "Spend the day at Disney California Adventure.",
+                    "Experience Cars Land, Pixar Pier, and Avengers Campus.",
+                    "Enjoy 3D & 4D rides like Soarin' Around the World.",
+                    "Return to hotel for overnight stay."
+                ]
+            },
+            "day4": {
+                "title": "Universal Studios Hollywood",
+                "list": [
+                    "Visit Universal Studios for thrilling movie-themed adventures.",
+                    "Explore Wizarding World of Harry Potter.",
+                    "Ride Transformers 3D, Jurassic World & Studio Tour.",
+                    "Evening leisure at Universal CityWalk."
+                ]
+            },
+            "day5": {
+                "title": " Los Angeles Departure",
+                "list": [
+                    "Breakfast at hotel.",
+                    "Quick stop at Hollywood Walk of Fame (if time permits).",
+                    "Transfer to airport for your onward flight.",
+                    "Trip ends with magical family memories."
+                ]
+            }
+        }
+    },
+    {
+        "id": 5,
+        "title": "Maldives Luxury Water Villa",
+        "review": "3.5 review",
+        "days": "5 days",
+        "price": "$52",
+        "Duration": "5 Days &4 Nights",
+        "Places": "3N Overwater Villa | Speedboat Transfer | Water Sports | Private Island Luxury",
+        "image": "/src/assets/PopularToursPage/tour-05.jpg",
+        "DaysDescription": {
+            "day1": {
+                "title": "Arrival in Maldives",
+                "list": [
+                    "Arrive at Velana International Airport, Maldives.",
+                    "Experience snorkeling, kayaking or paddle boarding.",
+                    "Enjoy resort activities like beach volleyball & lagoon swimming.",
+                    "mantic candlelight dinner by the beach."
+                ]
+            },
+            "day2": {
+                "title": "Water Sports & Island Activities",
+                "list": [
+                    "Relax with a floating breakfast in your water villa.",
+                    "Enjoy classic attractions: Pirates of the Caribbean, Haunted Mansion, Space Mountain.",
+                    "Meet Disney characters and enjoy live shows.",
+                    "Evening parade & spectacular fireworks show."
+                ]
+            },
+            "day3": {
+                "title": "Leisure Day & Spa Experience",
+                "list": [
+                    "Leisure time to explore your private water villa.",
+                    "Indulge in a relaxing couple's spa treatment.",
+                    "Sunset cruise or dolphin watching (optional).",
+                    "Enjoy a fine dining experience at resort restaurant."
+                ]
+            },
+            "day4": {
+                "title": "Departure from Maldives",
+                "list": [
+                    "Breakfast at the resort.",
+                    "Check out and transfer back to the airport.",
+                    "Board your flight with unforgettable tropical memories."
+                ]
+            }
+        }
+    },
+    {
+        "id": 6,
+        "title": "Maldives Honeymoon Special",
+        "review": "3.5 review",
+        "days": "5 days",
+        "price": "$89",
+        "Duration": "5 Days &4 Nights",
+        "Places": "2N Beach Villa | 2N Water Villa | Candlelight Dinner | Sunset Cruise",
+        "image": "/src/assets/PopularToursPage/tour-06.jpg",
+        "DaysDescription": {
+            "day1": {
+                "title": "Arrival in Maldives",
+                "list": [
+                    "Arrive at Velana International Airport.",
+                    "Transfer to your resort by speedboat or seaplane.",
+                    "Check-in to your romantic Water Villa / Beach Villa.",
+                    "Enjoy a honeymoon welcome with sparkling juice & flower decoration."
+                ]
+            },
+            "day2": {
+                "title": "Island Activities & Water Adventures",
+                "list": [
+                    "Start your day with a floating breakfast (optional).",
+                    "Enjoy snorkeling, kayaking & paddle boarding.",
+                    "Relax by the lagoon or infinity pool.",
+                    "Romantic private beach dinner at night."
+                ]
+            },
+            "day3": {
+                "title": "Spa Therapy & Sunset Cruise",
+                "list": [
+                    "Couple's spa session for relaxation & rejuvenation.",
+                    "Leisure time at your villa or resort beach.",
+                    "Evening sunset cruise or dolphin watching.",
+                    "Candlelight dinner with romantic ambience."
+                ]
+            },
+            "day4": {
+                "title": "Leisure Day for Honeymoon Moments",
+                "list": [
+                    "Enjoy private time in your Water Villa.",
+                    "Optional: Scuba diving, jet ski, parasailing.",
+                    "Explore resort photography spots for honeymoon memories.",
+                    "Enjoy fine dining or in-villa dining experience."
+                ]
+            },
+            "day5": {
+                "title": "Departure from Maldives",
+                "list": [
+                    "Breakfast at the resort.",
+                    "Check out and transfer to the airport.",
+                    "Fly back home with unforgettable honeymoon memories."
+                ]
+            }
+        }
+    }
+]
+
+// About Page 
+
+Popular Destination
+
+// Destination Ctg Json
+
+[
+    {
+        "id": 1,
+        "name": "Paris",
+        "slug": "paris",
+        "image": "src/assets/Destination/destination-01.jpg",
+        "country": "France"
+    },
+    {
+        "id": 2,
+        "name": "Maldives",
+        "slug": "maldives",
+        "image": "/src/assets/Destination/destination-02.jpg",
+        "country": "Maldives"
+    },
+    {
+        "id": 3,
+        "name": "Hong Kong",
+        "slug": "hong-kong",
+        "image": "/src/assets/Destination/destination-03.jpg",
+        "country": "China"
+    },
+    {
+        "id": 4,
+        "name": "Thailand",
+        "slug": "thailand",
+        "image": "/src/assets/Destination/destination-04.jpg",
+        "country": "Thailand"
+    },
+    {
+        "id": 5,
+        "name": "Bangkok",
+        "slug": "bangkok",
+        "image": "/src/assets/Destination/destination-05.jpg",
+        "country": "Thailand"
+    },
+    {
+        "id": 6,
+        "name": "Tokyo",
+        "slug": "tokyo",
+        "image": "/src/assets/Destination/destination-06.jpg",
+        "country": "Japan"
+    },
+    {
+        "id": 7,
+        "name": "Spain",
+        "slug": "spain",
+        "image": "/src/assets/Destination/destination-07.jpg",
+        "country": "Spain"
+    },
+    {
+        "id": 8,
+        "name": "California",
+        "slug": "california",
+        "image": "/src/assets/Destination/destination-08.jpg",
+        "country": "USA"
+    }
+]
+
+Our Amazing Services
+
+// Service Json
+
+[
+  {
+    "id": 1,
+    "name": "Tour Guide",
+    "image": "/src/assets/AboutPage/service-01.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Entertainment",
+    "image": "/src/assets/AboutPage/service-02.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Safe Flight",
+    "image": "/src/assets/AboutPage/service-03.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Texi & Metro",
+    "image": "/src/assets/AboutPage/service-04.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Delicious Food",
+    "image": "/src/assets/AboutPage/service-05.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Spa & Massages",
+    "image": "/src/assets/AboutPage/service-06.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Interesting Rest",
+    "image": "/src/assets/AboutPage/service-07.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Pickup & Drop",
+    "image": "/src/assets/AboutPage/service-08.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Safe Flight",
+    "image": "/src/assets/AboutPage/service-03.jpg"
+  }
+]
+
+Wornderful Services For You
+Services We Offer
+
+// Service Page
+
+ const faqs = [
+        {
+            id: 1,
+            question: "01 - How can I book a trip?",
+            answer:
+                "Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi cons the miss sustion consation miss orcisition amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen orbinetion.",
+        },
+        {
+            id: 2,
+            question: "02 - How can I cancel my booking?",
+            answer:
+                "Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi cons the miss sustion consation miss orcisition amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen orbinetion.",
+        },
+        {
+            id: 3,
+            question: "03 - Do you offer international travel packages?",
+            answer:
+                "Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi cons the miss sustion consation miss orcisition amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen orbinetion.",
+        },
+        {
+            id: 3,
+            question: "04 - Are there group discounts available?",
+            answer:
+                "Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi cons the miss sustion consation miss orcisition amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen orbinetion.",
+        },
+];
+
+const gallery = [
+        { image: gallery1 },
+        { image: gallery2 },
+        { image: gallery3 },
+        { image: gallery4 },
+        { image: gallery5 },
+        { image: gallery6 }
+]
+
+Tour guide who give you proper information about every destination
+
+A tour guide service provides travelers with knowledgeable professionals who lead and enhance travel experiences. Tour guides offer insights into the history, culture, and significance of the places they visit, enriching the tourist's understanding They manage itineraries, transportation, and access to attractions, ensuring a smooth and organized tour
+    
+What Is a Tour Guide Service?
+
+ Explaining historical, cultural, and natural significance of place
+ Assisting with logistics like hotel check-ins, local transport, and dining
+ Offering safety tips and local etiquette guidance
+ Customizing itineraries based on traveler interests
+
+ Types of Tour Guide Services
+
+ Private Guide
+
+ One-on-one personalized tours, often tailored to specific interests
+
+ Group Tours
+ Shared tours with multiple travelers, often more budget-friendly
+
+ City Guides
+ Local experts for urban exploration—museums, markets, monuments
+ 
+ Cultural Guides
+ Focus on traditions, festivals, cuisine, and heritage sites
+
+ Tour Managers
+ Oversee multi-day trips, handling logistics and group coordination
+
+ Nature & Wildlife Guides
+ Specialists in safaris, trekking, and eco-tourism areas like sanctuaries
+
+ Key Features of Professional Tour Guides
+
+ Certified by the Government of USA:
+ Licensed guides undergo rigorous training and exams
+
+ Multilingual:
+ Many guides speak English, Hindi, and regional languages
+
+ Local Expertise:
+  Deep knowledge of history, culture, and hidden gems
+
+  Flexible Engagement:  
+  You can choose full-time guidance or occasional support
+
+  Safety & Support:
+  Guides help navigate unfamiliar areas and handle emergencies
+
+  Frequently Ask Questions
+
+
+  Our Scheduled Amenities
+  For Travel
+  Hotel
+
+  Free Wi-Fi, toiletries, heated floors, in-room slippers, cable TV, room service
+
+  Restaurants
+  Free water & side dishes, call buttons, Wi-Fi, mobile ordering
+
+  Public Facilities
+
+  Clean restrooms, free Wi-Fi (Seoul), tourist information centers, lockers
+
+  Transportations
+  High-speed KTX trains, T-money transportation cards, mobile apps
+
+  Shopping Area
+  Tax refund counters, delivery services, foreign language staff (in major stores)
+
+  For Food
+
+  Breakfast
+  Korean breakfasts often include soup, rice, and side dishes; Western options
+
+  Friendly Cafés
+  Many offer English menus, desserts, Korean snacks, and unique drinks
+
+  Delivery Apps
+
+  Apps like Baemin, Yogiyo offer English support and deliver almost anywhere    
+
+  Veg/ Nonveg
+  Growing availability, especially in Seoul; some apps help locate vegan food
+
+  Free Side Dishes
+  Most Korean restaurants offer unlimited free side dishes with meals
+
+  Recent Posts
+
+  Aidan Butler
+  Resources for your first trip to overseas vacation
+
+  Ricardo Bell
+  How to get acquainted with natives in a strange land
+
+   Martin Hicks
+   Step by step guide to planning your ideal holiday
+
+   Top Destinations
+
+   Thailand
+   ( 05 Listing )
+
+   Maldives
+   ( 07 Listing )
+
+   Bangkok
+   ( 08 Listing )
+
+   Peris
+   ( 09 Listing )
+
+   Spain
+( 02 Listing )
+
+
+Popular Tags
+
+Food
+Tour
+Pool
+Safari
+Sky
+Hotel
+Adventure
+Travel
+Luxury
+Wildlife
+
+Gallery
+
+
+// Tour Guid 
+
+[
+    {
+        "id": 1,
+        "name": "Murphy",
+        "image": "/src/assets/TourGuidePage/pic1.jpg",
+        "jobtitle": "Tourist Guide",
+        "Age": 36,
+        "Education": "Bsc of Computer Science",
+        "Location": "Philadelphia U.S.A",
+        "Experiences": "5 Years",
+        "Contact": "+91 123 456 7890",
+        "Email": "Murphy@gmail.com"
+    },
+    {
+        "id": 2,
+        "name": "Murray",
+        "image": "/src/assets/TourGuidePage/pic2.jpg",
+        "jobtitle": "Tourist Guide",
+        "Age": 30,
+        "Education": "Bsc of Computer Science",
+        "Location": "Philadelphia U.S.A",
+        "Experiences": "4 Years",
+        "Contact": "+91 323 656 7679",
+        "Email": "murray@gmail.com"
+    },
+    {
+        "id": 3,
+        "name": "Alexis Cox",
+        "image": "/src/assets/TourGuidePage/pic3.jpg",
+        "jobtitle": "Tourist Guide",
+        "Age": 45,
+        "Education": "Msc of Computer Science",
+        "Location": "U.S.A",
+        "Experiences": "4 Years",
+        "Contact": "+91 321 456 0987",
+        "Email": "travllaricardo@gmail.com"
+    },
+    {
+        "id": 4,
+        "name": "Crawford",
+        "image": "/src/assets/TourGuidePage/pic4.jpg",
+        "jobtitle": "Tourist Guide",
+        "Age": 36,
+        "Education": "Msc of Computer Science",
+        "Location": "Nepal",
+        "Experiences": "4 Years",
+        "Contact": "+91 444 542 4242",
+        "Email": "crawford@gmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Ethan Walker",
+        "image": "/src/assets/TourGuidePage/pic5.jpg",
+        "jobtitle": "Tourist Guide",
+        "Age": 26,
+        "Education": "BCA",
+        "Location": "Nepal",
+        "Experiences": "4 Years",
+        "Contact": "+91 555 342 1212",
+        "Email": "m.walker@gmail.com"
+    },
+    {
+        "id": 6,
+        "name": "Liam Brooks",
+        "image": "/src/assets/TourGuidePage/pic6.jpg",
+        "jobtitle": "Tourist Guide",
+        "Age": 37,
+        "Education": "Bsc of Computer Science",
+        "Location": "U.S.A",
+        "Experiences": "4 Years",
+        "Contact": "+91 654 542 3454",
+        "Email": "lamsf@gmail.com"
+    }
+]
+
+
+// Tour Guid Details
+
+I am a professional who enhances travel experiences by leading individuals or groups through destinations, providing insightful commentary, logistical support, and cultural interpretation. Here's a complete overview:
+
+Essential Skills
+
+Communication & storytelling
+Leadership & group management
+Time coordination & logistics
+Multilingual ability
+Cultural sensitivity
+First aid & safety awareness (especially for adventure guides)
+
+Certifications & Training
+
+India:
+Ministry of Tourism offers licenses via IITTM and regional programs
+
+Global:
+WFTGA (World Federation of Tourist Guide Associations) sets international standards
+
+Specialized Courses:
+Adventure guiding, museum interpretation, eco-tourism, etc.
+
+
+// Faqs Page
+
+    const faqs = [
+            {
+                id: 1,
+                question: "1 - How do I book a tour package?",
+                answer:
+                    "You can book your desired tour package directly through our website by selecting the package, choosing the travel dates, and completing the online payment.",
+            },
+            {
+                id: 2,
+                question: "2 - Can I customize my travel itinerary?",
+                answer:
+                    "Yes! Most of our tour packages are customizable. You can modify hotels, activities, and travel dates based on availability.",
+            },
+            {
+                id: 3,
+                question: "3 - What payment methods do you accept?",
+                answer:
+                    "We accept major credit/debit cards, net banking, UPI, and secure wallet payments.",
+            },
+            {
+                id: 4,
+                question: "4 - Will I receive confirmation after booking?",
+                answer:
+                    "Yes, you’ll receive an instant email or WhatsApp confirmation along with your booking details and invoice.",
+            },
+            {
+                id: 5,
+                question: "5 - Are flights included in the package?",
+                answer:
+                    "Flight inclusion depends on the package. Check the Inclusions section for each package to confirm what’s covered.",
+            },
+            {
+                id: 6,
+                question: "6 - Can I cancel or reschedule my booking?",
+                answer:
+                    "Yes, cancellations and date changes are allowed based on the package policy. Cancellation charges may apply.",
+            },
+            {
+                id: 7,
+                question: "7 - Is travel insurance included?",
+                answer:
+                    "Travel insurance is optional and can be added during the booking process for an additional fee.",
+            },
+            {
+                id: 8,
+                question: "8 - Do you provide visa assistance?",
+                answer:
+                    "Yes, we offer complete visa assistance including documentation guidance, appointment help, and submission support.",
+            },
+        ];
+
+Frequently Asked Questions
+
+Find Answers for Questions You Have.
+
+Travlla is a multi-award-winning strategy and content creation agency that specializes in travel marketing.
+
+Give us a chance to help you!
+
+Reach & Get in Touch With Us!
+
+We’love to hear from you. Our friendly team is always here to chat
+
+
+// Pricing Plan Page
+
+Pricing Plan
+
+Price For Travel The World
+Destinations worth exploring! Here are a few popular spots
+
+Budget Travel
+
+$49
+Per Day
+
+3 star hotel (4 nights)
+Local taxis
+Sightseeing, tickets
+Tourist visa
+Meals & snacks
+
+Shop Now
+
+Mid-Range Travel
+$79
+Per Day
+
+Luxury Travel
+$99
+Per Day
+
+Easy Step For Booking
+
+Maybe for a travel blog, wildlife site, or web development project here are a few sample templates you can use to simulate real-time news updates:
+
+Choose Destination
+All you have to do is, first select your preferred destination and proceed
+
+background: linear-gradient(to bottom, #53a4c0 45%, #ffffff 100%);
+
+filter: brightness(0) saturate(100%) invert(73%) sepia(22%) saturate(928%) hue-rotate(153deg) brightness(78%) contrast(89%);
+
+background: linear-gradient(to bottom, #ffa2b6 55%, #ffffff 100%);
+
+filter: brightness(0) saturate(100%) invert(66%) sepia(47%) saturate(380%) hue-rotate(301deg) brightness(101%) contrast(102%);
+
+background: linear-gradient(to bottom, #066168 46%, #ffffff 100%);
+filter: brightness(0) saturate(100%) invert(46%) sepia(28%) saturate(721%) hue-rotate(118deg) brightness(97%) contrast(86%);
+
+
+Make Payment
+You are important to us. We pay attention to the quality of every service we provide to you.
+
+Ready For Travelling
+We have seen that you have fulfilled all the requirements, now you are ready to travel.
+
+Reach & Get in Touch With Us!
+We’d love to hear from you. Our friendly team is always here to chat
+
+
+// Destination Details
+
+is a dynamic city where skyscrapers meet traditional markets and vibrant street life. Enjoy stunning harbor views, shopping, and rich cultural experiences.
+
+Destinations Features
+
+Explaining historical
+cultural
+and natural significance of place Assisting with logistics like hotel check-ins
+local transport
+and dining Offering safety tips and local etiquette guidance Customizing itineraries based on traveler interests
+
+Related tour Packages
+No destinations found for this location.
+
+// Tours Details
+
+Package Overview
+Experience Phuket, Krabi, and Phi Phi Islands with turquoise waters and scenic beaches. A perfect blend of island tours, snorkeling, and leisure time.
+
+Phuket, Krabi & Phi Phi Island stays
+Snorkeling and island-hopping tours
+Sunset viewpoints & beach activities
+Great for couples & friends
+
+Additional Easemytrip Delights
+
+Local Thailand travel assistance.
+Island tour upgrades available.
+
+Day Wise Itinerary
+
+Starting from
+$52/ Person
+
+
+Duration : 7 Days &6 Nights
+Places to Visit : 2N SF | 3N LA | 1N San Diego | Highways | Beaches | City Highlights
+
+Hotels
+
+Sightseeing
+
+Transfer
+
+Meal
+
+// Contact Page
+
+https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118106.58331786942!2d73.09068539198522!3d22.32224063536357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1772012708310!5m2!1sen!2sin
+
+
+Get in Touch
+We’d love to hear from you! Please fill out the form below.
+
+Contact Us
+
++1 123 456 7890
+
+Send us a Mail
+
+email@domain.com
+
+Address
+
+785 15h Street, Office 478
+Berlin, De 81566
+
+
+

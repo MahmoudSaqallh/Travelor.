@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Murphy",
+    "slug": "murphy",
+    "image": "/TourGuidePage/pic1.jpg",
+    "jobTitle": "Tourist Guide",
+    "age": 36,
+    "education": "Bsc of Computer Science",
+    "location": "Philadelphia U.S.A",
+    "experience": "5 Years",
+    "contact": "+91 123 456 7890",
+    "email": "Murphy@gmail.com"
+  },
+  {
+    "name": "Murray",
+    "slug": "murray",
+    "image": "/TourGuidePage/pic2.jpg",
+    "jobTitle": "Tourist Guide",
+    "age": 30,
+    "education": "Bsc of Computer Science",
+    "location": "Philadelphia U.S.A",
+    "experience": "4 Years",
+    "contact": "+91 323 656 7679",
+    "email": "murray@gmail.com"
+  },
+  {
+    "name": "Alexis Cox",
+    "slug": "alexis-cox",
+    "image": "/TourGuidePage/pic3.jpg",
+    "jobTitle": "Tourist Guide",
+    "age": 45,
+    "education": "Msc of Computer Science",
+    "location": "U.S.A",
+    "experience": "4 Years",
+    "contact": "+91 321 456 0987",
+    "email": "travllaricardo@gmail.com"
+  },
+  {
+    "name": "Crawford",
+    "slug": "crawford",
+    "image": "/TourGuidePage/pic4.jpg",
+    "jobTitle": "Tourist Guide",
+    "age": 36,
+    "education": "Msc of Computer Science",
+    "location": "Nepal",
+    "experience": "4 Years",
+    "contact": "+91 444 542 4242",
+    "email": "crawford@gmail.com"
+  },
+  {
+    "name": "Ethan Walker",
+    "slug": "ethan-walker",
+    "image": "/TourGuidePage/pic5.jpg",
+    "jobTitle": "Tourist Guide",
+    "age": 26,
+    "education": "BCA",
+    "location": "Nepal",
+    "experience": "4 Years",
+    "contact": "+91 555 342 1212",
+    "email": "m.walker@gmail.com"
+  },
+  {
+    "name": "Liam Brooks",
+    "slug": "liam-brooks",
+    "image": "/TourGuidePage/pic6.jpg",
+    "jobTitle": "Tourist Guide",
+    "age": 37,
+    "education": "Bsc of Computer Science",
+    "location": "U.S.A",
+    "experience": "4 Years",
+    "contact": "+91 654 542 3454",
+    "email": "lamsf@gmail.com"
+  }
+]

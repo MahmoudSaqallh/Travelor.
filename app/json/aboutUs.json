@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Paris",
+    "slug": "paris",
+    "country": "France",
+    "image": "/AboutPage/destination-01.jpg",
+    "description": "Known as the City of Light, Paris is famous for the Eiffel Tower, world-class museums, romantic atmosphere, and rich cultural heritage.",
+    "rating": 4.9,
+    "listings": 28,
+    "popularAttractions": [
+      "Eiffel Tower",
+      "Louvre Museum",
+      "Notre-Dame Cathedral",
+      "Champs-Élysées"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Maldives",
+    "slug": "maldives",
+    "country": "Maldives",
+    "image": "/AboutPage/destination-02.jpg",
+    "description": "A tropical paradise known for crystal-clear waters, luxury resorts, white-sand beaches, and water villas.",
+    "rating": 4.8,
+    "listings": 32,
+    "popularAttractions": [
+      "Male City",
+      "Vaadhoo Island",
+      "Water Villas",
+      "Coral Reefs"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hong Kong",
+    "slug": "hong-kong",
+    "country": "China",
+    "image": "/AboutPage/destination-03.jpg",
+    "description": "A vibrant city blending modern skyscrapers, traditional culture, shopping, and world-class dining.",
+    "rating": 4.7,
+    "listings": 24,
+    "popularAttractions": [
+      "Victoria Peak",
+      "Hong Kong Disneyland",
+      "Tsim Sha Tsui",
+      "Victoria Harbour"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Thailand",
+    "slug": "thailand",
+    "country": "Thailand",
+    "image": "/AboutPage/destination-04.jpg",
+    "description": "Famous for beautiful beaches, temples, nightlife, delicious cuisine, and affordable travel experiences.",
+    "rating": 4.8,
+    "listings": 40,
+    "popularAttractions": [
+      "Phuket",
+      "Krabi",
+      "Chiang Mai",
+      "Bangkok"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Bangkok",
+    "slug": "bangkok",
+    "country": "Thailand",
+    "image": "/AboutPage/destination-05.jpg",
+    "description": "Thailand's bustling capital, known for vibrant street markets, temples, nightlife, and modern shopping centers.",
+    "rating": 4.6,
+    "listings": 18,
+    "popularAttractions": [
+      "Grand Palace",
+      "Wat Arun",
+      "Floating Market",
+      "Chatuchak Market"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Tokyo",
+    "slug": "tokyo",
+    "country": "Japan",
+    "image": "/AboutPage/destination-06.jpg",
+    "description": "A futuristic city blending advanced technology, ancient traditions, anime culture, and exceptional food.",
+    "rating": 4.9,
+    "listings": 22,
+    "popularAttractions": [
+      "Tokyo Tower",
+      "Shibuya Crossing",
+      "Senso-ji Temple",
+      "Akihabara"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Spain",
+    "slug": "spain",
+    "country": "Spain",
+    "image": "/AboutPage/destination-07.jpg",
+    "description": "Known for its rich history, Mediterranean beaches, delicious cuisine, and vibrant festivals.",
+    "rating": 4.7,
+    "listings": 15,
+    "popularAttractions": [
+      "Barcelona",
+      "Madrid",
+      "Seville",
+      "Sagrada Familia"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "California",
+    "slug": "california",
+    "country": "USA",
+    "image": "/AboutPage/destination-08.jpg",
+    "description": "A diverse destination featuring beaches, national parks, Hollywood, and iconic road-trip routes.",
+    "rating": 4.8,
+    "listings": 20,
+    "popularAttractions": [
+      "Golden Gate Bridge",
+      "Yosemite National Park",
+      "Disneyland",
+      "Hollywood"
+    ]
+  }
+]
